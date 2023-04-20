@@ -1,0 +1,22 @@
+.footer {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid var(--white-color-darker);
+}
+.footer__flex {
+	display: flex;
+	justify-content: center;
+}
+.footer__text {
+	font-family: var(--body-font);
+	font-size: 14px;
+	color: var(--black-color);
+}
+
+@media screen and (min-width:1024px) {
+	.footer {
+		padding-bottom: 0px;
+		padding-top: 15px;
+	}
+}

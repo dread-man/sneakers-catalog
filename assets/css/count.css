@@ -1,0 +1,32 @@
+.count__sneakers {
+	margin-top: 30px;
+	margin-bottom:40px;
+}
+
+.count__flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.text__description {
+	font-family: var(--body-font);
+	font-weight: 600;
+	color: var(--black-color);
+}
+
+.text__count {
+	font-family: var(--body-font);
+	font-weight: 600;
+	color: var(--black-color);
+
+}
+
+
+@media screen and (max-width: 1024px) {
+	.text__description {
+		margin-left: 30px;
+	}
+	.text__count {
+		margin-right: 30px;
+	}
+}

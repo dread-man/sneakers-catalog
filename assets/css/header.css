@@ -1,0 +1,128 @@
+.header {
+	border-bottom: 1px solid var(--white-color-darker);
+	position: fixed;
+	width: 100%;
+	backdrop-filter: blur(10px);
+	height: 54px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.05), 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.header .burger__menu {
+	display: none;
+}
+
+.header__flex-items {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 54px;
+}
+
+/* adding another class for switch theme  */
+.header__icon {
+	width: 50px;
+}
+/* adding another class for switch theme  */
+
+.header__icon-hide {
+	display: none;
+}
+
+.header__list-companies {
+	display: flex;
+	gap: 25px;
+}
+
+.header__list-item a{
+	color: var(--black-color);
+	transition: .3s;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header__flex-items .header__list-companies a:hover {
+	color: var(--black-color-lighter);
+}
+
+.theme__button {
+	color: var(--black-color);
+	padding: 4px;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.theme__icon {
+	font-size: 20px;
+}
+
+.theme__button:hover {
+	background-color: var(--white-color-darker);
+}
+
+.theme__button:hover .theme__icon {
+	color: var(--black-color);
+}
+
+.burger__menu {
+	color: var(--black-color);
+	padding: 4px;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.burger__menu:active {
+	background-color: var(--white-color-darker);
+}
+
+.burger__menu:active .burger__menu__icon {
+	color: var(--black-color);
+}
+
+.header__mobile .header__list-companies{
+	display: none;
+}
+
+.header__mobile .burger__menu {
+	display: block;
+}
+
+.buttons__container {
+	display: flex;
+	gap: 20px;
+	padding-left: 22px;
+}
+
+.header__mobile .theme__icon{
+	font-size: 23px;
+}
+
+.header__mobile .burger__menu__icon {
+	font-size: 23px;
+}
+
+.header__list-item:last-child a {
+	color: var(--black-color-lighter);
+}
+
+@media screen and (max-width: 1024px) {
+	.header__flex-items .header__list-companies a:hover {
+		color: initial;
+	}
+	.theme__button:hover {
+		background-color: initial;
+	}
+	
+	.theme__button:hover .theme__icon {
+		color: initial;
+	}
+
+	.header__flex-items .header__list-companies a:active {
+		color: var(--black-color-lighter);
+	}
+	.theme__button:active {
+		background-color: var(--white-color-darker);
+	}
+	
+	.theme__button:active .theme__icon {
+		color: var(--black-color);
+	}
+}

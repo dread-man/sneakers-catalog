@@ -1,0 +1,36 @@
+.modeles {
+    margin-top: 30px;
+}
+.modeles-ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 30px;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+}
+
+.modeles__ul__li__a {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid var(--black-color);
+    padding: 10px;
+	color: var(--black-color);
+}
+
+.modeles__ul__li__a:hover {
+    color: var(--white-color);
+    background-color: var(--black-color);
+    cursor: pointer;
+}
+
+.modeles__ul__li__a-active {
+    color: var(--white-color);
+    background-color: var(--black-color);
+    cursor: pointer;
+}
+
+.models__none {
+	display: none;
+}

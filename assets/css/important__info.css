@@ -1,0 +1,30 @@
+.important__info {
+    padding-top: 71px;
+}
+
+.important__info__ul {
+    background-color:  var(--white-color-darker);
+    padding: 15px;
+    text-align: center;
+}
+
+.important__info__li {
+    font-family: 'Poppins', sans-serif;
+	display: none;
+	color: var(--black-color);
+}
+
+.showing {
+    display: inline;
+	/* animation: ani 1s; */
+}
+
+@keyframes ani {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+

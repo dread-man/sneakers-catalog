@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--==================== REMIXICON  ====================-->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- ===============   FAVICON  ============ -->
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#dddbdb">
+    <meta name="theme-color" content="#ffffff">
+
+	<!--==================== TITLE ====================-->
+	<title>SSnikers - amazing shoes</title>
+
+	<!--==================== STYLES ====================-->
+	<link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body onload="getCount()">
+	<div class="wrapper">
+		<!--==================== HEADER ====================-->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__flex-items">
+					<a href="#info" onclick="location.reload()">
+						<img id="header-icon-sneaker" class="header__icon" src="assets/icons/sneakers_icon.png" alt="">
+					</a>
+					<ul class="header__list-companies">
+						<li class="header__list-item">
+							<a id="nike-button1" href="#">Nike</a>
+						</li>
+						<li class="header__list-item">
+							<a id="adidas-button1" href="#">Adidas</a>
+						</li>
+						<li class="header__list-item">
+							<a id="nb-button1" href="#">New balance</a>
+						</li>
+						<li class="header__list-item">
+							<a href="#authors">About author</a>
+						</li>
+					</ul>
+					<div class="buttons__container"> 
+						<a href="#" class="theme__button" id="theme-button" onclick="return false;">
+							<i class="theme__icon ri-moon-line"></i>
+						</a>
+						<a href="#" class="burger__menu" id="burger-menu" onclick="return false;">
+							<i class="burger__menu__icon ri-menu-fill"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		
+		<!--==================== MOBILE MENU====================-->
+		<div class="mobile__menu mobile__menu-hide" id="mobile-menu">
+			<div class="mobile__flex">
+				<div href="#" class="close__menu">
+					<a href="#" id="close-menu" onclick="return false;">
+						<i class="close__icon ri-close-fill"></i>
+					</a>
+				</div>
+
+				<ul class="mobile__flex-companies">
+					<li class="header__list-item">
+						<a id="nike-button2" href="#">Nike</a>
+					</li>
+					<li class="header__list-item">
+						<a id="adidas-button2" href="#">Adidas</a>
+					</li>
+					<li class="header__list-item">
+						<a id="nb-button2" href="#">New balance</a>
+					</li>
+				</ul>
+
+				<ul class="mobile__flex-items">
+					<li class="header__list-item">
+						<a href="#authors">About author</a>
+					</li>
+					<li class="header__list-item">
+						<a href="#authors">Footer</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--==================== MAIN ====================-->
+		<main class="main" id="main">
+			<!--==================== INFO ====================-->
+			<section class="important__info" id="info">
+				<ul class="important__info__ul">
+					<li class="important__info__li showing">We work seven days a week from 10:00 to 19:00</li>
+					<li class="important__info__li">Calls are free: 0800 331751</li>
+					<li class="important__info__li">Delivery throughout Ukraine</li>
+					<li class="important__info__li">Issue a refund if the order did not fit</li>
+				</ul>
+			</section>
+
+			<!--==================== COUNT SNEAKERS====================-->
+			<section class="count__sneakers">
+				<div class="container">
+					<div class="count__flex">
+						<h3 class="text__description" id="desc-text">Total found:</h3>
+						<h3 class="text__count" id="count-text"></h3>
+					</div>
+				</div>
+			</section>
+
+			<!-- ============== SECTION MODELES  ===============-->
+            <section class="modeles">
+                <div class="container">
+                    <ul class="modeles-ul" id="myList">
+                        <li class="modeles-li nike">
+                            <a class="modeles__ul__li__a" href="#">Air Force</a>
+                        </li>
+
+                        <li class="modeles-li nike">
+                            <a class="modeles__ul__li__a" href="#">Air Jordan 1</a>
+                        </li>
+
+                        <li class="modeles-li nike">
+                            <a class="modeles__ul__li__a" href="#">Air Max</a>
+                        </li>
+
+                        <li class="modeles-li nike">
+                            <a class="modeles__ul__li__a" href="#">Air Monarch</a>
+                        </li>
+
+                        <li class="modeles-li nike">
+                            <a class="modeles__ul__li__a" href="#">Benassi</a>
+                        </li>
+
+                        <li class="modeles-li nike">
+                            <a class="modeles__ul__li__a" href="#">Blazer</a>
+                        </li>
+
+                        <li class="modeles-li nike">
+                            <a class="modeles__ul__li__a" href="#">Dunk</a>
+                        </li>
+
+                        <li class="modeles-li adidas">
+                            <a class="modeles__ul__li__a" href="#"> Ozweego</a>
+                        </li>
+
+                        <li class="modeles-li adidas">
+                            <a class="modeles__ul__li__a" href="#"> Stan Smith</a>
+                        </li>
+
+                        <li class="modeles-li adidas">
+                            <a class="modeles__ul__li__a" href="#">Superstar</a>
+                        </li>
+
+                        <li class="modeles-li adidas">
+                            <a class="modeles__ul__li__a" href="#">Yeezy Boost 350</a>
+                        </li>
+
+                        <li class="modeles-li adidas">
+                            <a class="modeles__ul__li__a" href="#">Yeezy Boost 500</a>
+                        </li>
+
+                        <li class="modeles-li adidas">
+                            <a class="modeles__ul__li__a" href="#"> Yeezy Boost 700</a>
+                        </li>
+
+                        <li class="modeles-li nb">
+                            <a class="modeles__ul__li__a" href="#">480</a>
+                        </li>
+
+                        <li class="modeles-li nb">
+                            <a class="modeles__ul__li__a" href="#">550</a>
+                        </li>
+
+                        <li class="modeles-li nb">
+                            <a class="modeles__ul__li__a" href="#">574</a>
+                        </li>
+
+                        <li class="modeles-li nb">
+                            <a class="modeles__ul__li__a" href="#">840</a>
+                        </li>
+
+                        <li class="modeles-li nb">
+                            <a class="modeles__ul__li__a" href="#">990</a>
+                        </li>
+
+                        <li class="modeles-li nb">
+                            <a class="modeles__ul__li__a" href="#">997</a>
+                        </li>
+
+                        <li class="modeles-li nb">
+                            <a class="modeles__ul__li__a" href="#">998</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+			<!--==================== ALL SNEAKERS ====================-->
+            <section class="all__sheakers">
+            <div class="container">
+                <ul class="all__sheakers-ul">
+                    
+                    <li class="all__sheakers__ul-li nike airforce">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/force_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE AIR FORCE BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">135</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike airforce">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/force_white_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;"  class="all__sheakers__ul__li__div-a">NIKE AIR FORCE WHITE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">135</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike airforce">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/force_high_white_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;"  class="all__sheakers__ul__li__div-a">NIKE AIR FORCE HIGH WHITE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">145</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike airjordan1">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/jordan1_grey_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#"onclick="return false;"  class="all__sheakers__ul__li__div-a">NIKE AIR JORDAN 1 MID WHITE SHADOW</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">260</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike airjordan1">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/jordan1_blue_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+
+							<a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE AIR JORDAN 1 MID OBSIDIAN</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">207</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike airjordan1">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/jordan1_orange_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE AIR JORDAN 1 MID ORANGE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">215</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike airjordan1">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/jordan1_grey_aluminiun_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE AIR JORDAN 1 GREY ALUMINIUM</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">240</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike airjordan1">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/jordan1_smoke_grey_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE AIR JORDAN 1 SMOKE GREY</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">265</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike airjordan1">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/jordan1_low_smoke_grey_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE AIR JORDAN 1 LOW SMOKE GREY</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">215</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+
+					<li class="all__sheakers__ul-li nike airmax">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/airmax_white_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE AIR MAX WHITE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">80</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike airmonarch">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/monarch_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE AIR MONARCH BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">120</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike airmonarch">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/monarch_blue_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE AIR MONARCH BLUE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">120</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike airmonarch">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/monarch_grey_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE AIR MONARCH GREY</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">120</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike airmonarch">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/monarch_white_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE AIR MONARCH WHITE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+								<span class="all__sheakers__ul__li__div__span-first">120</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike airmonarch">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/monarch_completely_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE AIR MONARCH COMPLETELY BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">120</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike benassi">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/benassi_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">BENASSI NIKE BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">38</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike benassi">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/benassi_white_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">BENASSI NIKE WHITE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">38</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike benassi">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/benassi_white_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">BENASSI NIKE BLACK&WHITE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">38</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike blazer">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+								<img src="./assets/img/nike/blazer_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE BLAZER BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">135</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike blazer">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/blazer_white_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE BLAZER WHITE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">135</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike dunk">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/dunk_low_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE DUNK LOW BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">160</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nike dunk">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/nike/dunk_low_white_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NIKE DUNK LOW WHITE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">160</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas ozweego">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/ozweego_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS OZWEEGO BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">120</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+					<li class="all__sheakers__ul-li adidas ozweego">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/ozweego_white_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS OZWEEGO WHITE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">120</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="all__sheakers__ul-li adidas stansmith">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/stansmith_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS STAN SMITH BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">90</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas stansmith">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/stansmith_completely_white_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS STAN SMITH COMPLETELY WHITE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">90</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="all__sheakers__ul-li adidas stansmith">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/stansmith_white-black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS STAN SMITH WHITE&BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">90</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="all__sheakers__ul-li adidas stansmith">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/stansmith_white-green_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+							<a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS STAN SMITH WHITE&GREEN</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">90</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas stansmith">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/stansmith_white-blue_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS STAN SMITH BLUE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">90</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas stansmith">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/stansmith_white-red_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS STAN SMITH RED</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">90</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas stansmith">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/stansmith_white-pink_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS STAN SMITH PINK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">90</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+					<li class="all__sheakers__ul-li adidas superstar">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/superstar_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;"  class="all__sheakers__ul__li__div-a">ADIDAS SUPERSTAR BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">80</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas superstar">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/superstar_white_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS SUPERSTAR WHITE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">65</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas superstar">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/superstar_white-black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;"  class="all__sheakers__ul__li__div-a">ADIDAS SUPERSTAR WHITE&BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">120</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas yeezyboost350">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/350_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS YEEZY BOOST 350 V2 BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">310</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas yeezyboost350">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/350_light_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS YEEZY BOOST 350 V2 ORANGE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+								<span class="all__sheakers__ul__li__div__span-first">280</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas yeezyboost350">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/350_silver_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;"  class="all__sheakers__ul__li__div-a">ADIDAS YEEZY BOOST 350 V2 SILVER</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">285</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas yeezyboost500">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/500_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS YEEZY BOOST 350 V2 BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">320</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas yeezyboost500">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/500_brown_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS YEEZY BOOST 350 V2 BROWN</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">320</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas yeezyboost700">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/700_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS YEEZY BOOST 700 V2 BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">380</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas yeezyboost700">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+							<img src="./assets/img/adidias/700_grey_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS YEEZY BOOST 700 V2 GREY</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">380</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li adidas yeezyboost700">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/adidias/700_white_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">ADIDAS YEEZY BOOST 700 V2 WHITE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">345</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 480">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/480_grey_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NEW BALANCE 480 WHITE</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">95</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 550">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/550_white_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NEW BALANCE 550 WHITE&GREY</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">95</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 574">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/574_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;"  class="all__sheakers__ul__li__div-a">NEW BALANCE 574 WHITE&BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">85</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+					</li>
+
+                    <li class="all__sheakers__ul-li nb 574">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/574_green_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NEW BALANCE 574 GREEN</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">55</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 574">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/574_grey_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NEW BALANCE 574 GREY</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">95</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 840">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/840_grey_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NEW BALANCE 840 GREY</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">80</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 840">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/840_white-black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NEW BALANCE 840 WHITE&BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">70</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 990">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/990_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NEW BALANCE 990 BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+							<span class="all__sheakers__ul__li__div__span-first">92</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 990">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/990_grey_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NEW BALANCE 990 GREY</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">145</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 997">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/997_brown_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NEW BALANCE 997 BROWN</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">150</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 997">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/997_grey_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NEW BALANCE 997 GREY</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">105</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 997">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/997_khaki_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;"  class="all__sheakers__ul__li__div-a">NEW BALANCE 997 KHAKI</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">150</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 997">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/997_red_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+							<a href="#" onclick="return false;"  class="all__sheakers__ul__li__div-a">NEW BALANCE 997 RED</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">105</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 998">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/998_black_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;"  class="all__sheakers__ul__li__div-a">NEW BALANCE 998 BLACK</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">68</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="all__sheakers__ul-li nb 998">
+                        <div class="all__sheakers__ul__li-div">
+                            <a href="#" onclick="return false;">
+                                <img src="./assets/img/new-balance/998_grey_1.jpg" alt="" class="all__sheakers__ul__li__div-img">
+                            </a>
+                            <a href="#" onclick="return false;" class="all__sheakers__ul__li__div-a">NEW BALANCE 998 GREY</a>
+                            <div class="all__sheakers__ul__li__div-span">
+                                <span class="all__sheakers__ul__li__div__span-first">68</span>
+                                <span class="all__sheakers__ul__li__div__span-second">$</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        	</section>
+
+			<!--==================== AUTHOR ====================-->
+			<section class="authors" id="authors">
+				<div class="container">
+					<h3 class="authors__text">Developer:</h3>
+					<div class="authors__flex">
+						<div class="author__first">
+							<h4 class="name__author">David Voronyanskiy</h4>
+							<div class="links__flex">
+								<a class="author__icon" href="https://github.com/Davidoff112" target="_blank">
+									<i class="ri-github-fill"></i>
+								</a>
+								<a class="author__icon" href="https://t.me/Ddsonq" target="_blank">
+									<i class="ri-telegram-fill"></i>
+								</a>
+								<a class="author__icon" href="https://www.instagram.com/david_voronyanskiy/" target="_blank">
+									<i class="ri-instagram-fill"></i>
+								</a>
+							</div>
+						</div>
+						<!-- <div class="author__second">
+							<h4 class="name__author">Danil Padashylia</h4>
+							<div class="links__flex">
+								<a class="author__icon" href="https://github.com/Davidoff112" target="_blank">
+									<i class="ri-github-fill"></i>
+								</a>
+								<a class="author__icon" href="https://t.me/Ddsonq" target="_blank">
+									<i class="ri-telegram-fill"></i>
+								</a>
+								<a class="author__icon" href="https://www.instagram.com/david_voronyanskiy/" target="_blank">
+									<i class="ri-instagram-fill"></i>
+								</a>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!--==================== SCROLL UP ====================-->
+		<a href="#info" class="scrollup" id="scroll-up">
+			<i class="ri-arrow-up-s-line"></i>
+		</a>
+
+		<!--==================== MODAL ====================-->
+		<div class="modal">
+			<div class="modal-content">
+				<a class="close-modal" href="#" id="close-menu" onclick="return false;">
+					<i class="modal__close__icon ri-close-fill"></i>
+				</a>
+				<div class="modal__img">
+					<img src="assets/img/nike/blazer_white_1.jpg" alt="">
+				</div>
+				<h4 class="modal__title">NIKE AIRMAX WHITE</h4>
+				<p class="modal__text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente provident, accusantium delectus ullam quis eum odio pariatur nostrum, vel nisi dolore hic sit quasi iste impedit, fugit unde est expedita?
+				</p>
+				<div class="price__container">
+					<a href="#" class="price__btn" onclick="return false;">
+						Buy
+					</a>
+					<span class="price__text">135$</span>
+				</div>
+			</div>
+		</div>
+
+		<!--==================== FOOTER ====================-->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__flex">
+					<h4 class="footer__text">All rights secure | 2023</h4>
+				</div> 
+			</div>
+		</footer>
+	</div>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src='assets/js/scrollreveal.js'></script>
+
+	<!--==================== JS ====================-->
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/app2.js"></script>
+</body>
+</html>
