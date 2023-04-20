@@ -16,7 +16,7 @@
 
 .showing {
     display: inline;
-	/* animation: ani 1s; */
+	animation: ani 1.4s;
 }
 
 @keyframes ani {
@@ -27,4 +27,3 @@
 		opacity: 1;
 	}
 }
-

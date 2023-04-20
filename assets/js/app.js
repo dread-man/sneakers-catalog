@@ -316,13 +316,38 @@ if(nb2) {
 const elemsList = document.querySelectorAll('.all__sheakers__ul-li')
 
 // find modal window and close button
-var modal = document.querySelector(".modal");
-var closeModal = document.querySelector(".close-modal");
-var buyButton = document.getElementById('buy-btn')
+let modal = document.querySelector(".modal");
+let closeModal = document.querySelector(".close-modal");
+let buyButton = document.getElementById('buy-btn')
+
+// variables for display content on modal window  
+let modalTitle = document.getElementById('modal-title')
+let priceText = document.getElementById('price-text')
+let modalImage1 = document.getElementById('modal-image1')
+let modalImage2 = document.getElementById('modal-image2')
+
 
 elemsList.forEach(el => el.addEventListener("click", function() {
 	modal.classList.add("active");
 	document.body.style.overflow = 'hidden';
+	let nameOfModel = el.querySelector('.all__sheakers__ul__li__div-a').textContent
+	modalTitle.textContent = nameOfModel
+	let priceTextModel = el.querySelector('.all__sheakers__ul__li__div__span-first').textContent
+	priceText.textContent = priceTextModel + '$'
+	let imageElem = el.querySelector('.all__sheakers__ul__li__div-img')
+	let imagePath = imageElem.src
+	const startIndex = imagePath.indexOf('assets');
+	const relativePath = imagePath.substring(startIndex);
+	modalImage1.src = relativePath
+
+	// for adding second image of snikers
+	let str = relativePath
+	const newChar = '2';
+	if (str.length >= 5) {
+	  const endIndex = str.length - 5;
+	  str = str.slice(0, endIndex) + newChar + str.slice(endIndex + 1);
+	}
+	modalImage2.src = str
 }))
 
 // close modal window on click on close button
