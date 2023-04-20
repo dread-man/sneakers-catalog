@@ -100,9 +100,10 @@
 	font-size: 23px;
 }
 
+/* 
 .header__list-item:last-child a {
 	color: var(--black-color-lighter);
-}
+} */
 
 @media screen and (max-width: 1024px) {
 	.header__flex-items .header__list-companies a:hover {
