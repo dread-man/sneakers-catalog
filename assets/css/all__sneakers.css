@@ -19,10 +19,12 @@
     column-gap: 5px;
     background-color: var(--white-color);  
     font-family: 'Poppins', sans-serif; 
+	transition: .3s;
 }
 
 .all__sheakers__ul__li-div:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+	transform: scale(105%);
 }
 
 .all__sheakers__ul__li__div-img {
@@ -49,6 +51,10 @@
     .all__sheakers-ul {
         grid-template-columns: repeat(2, 1fr);
     }
+	
+	.all__sheakers__ul__li-div:hover {
+		transform: initial;
+	}
 }
 
 @media screen and (max-width: 480px) {

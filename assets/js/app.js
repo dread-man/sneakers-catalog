@@ -1,4 +1,6 @@
 'use strict'
+
+// for animated load page
 document.addEventListener("DOMContentLoaded", function() {
 	var body = document.querySelector("body");
 	body.style.opacity = 1;
@@ -313,7 +315,7 @@ if(nb2) {
 
 const elemsList = document.querySelectorAll('.all__sheakers__ul-li')
 
-// Найти модальное окно и кнопку закрытия
+// find modal window and close button
 var modal = document.querySelector(".modal");
 var closeModal = document.querySelector(".close-modal");
 
@@ -322,7 +324,7 @@ elemsList.forEach(el => el.addEventListener("click", function() {
 	document.body.style.overflow = 'hidden';
 }))
 
-// Закрыть модальное окно при клике на кнопку закрытия
+// close modal window on click on close button
 closeModal.addEventListener("click", function() {
   modal.classList.remove("active");
   document.body.style.overflow = 'scroll';
@@ -342,3 +344,4 @@ window.addEventListener("resize", function() {
   var width = Math.min(maxWidth, window.innerWidth * 0.8); // Ширина контента модального окна
   modal.querySelector(".modal-content").style.width = width + "px";
 });
+
