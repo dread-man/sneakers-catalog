@@ -1,0 +1,27 @@
+.swiper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	color: black;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: black !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev::after {
+	font-size: 25px !important;
+	font-weight: 600;
+
+}
+
+@media screen and (max-width: 768px) {
+	.swiper-button-next:after,
+	.swiper-button-prev::after {
+		font-size: 20px !important;
+	}
+}

@@ -318,6 +318,7 @@ const elemsList = document.querySelectorAll('.all__sheakers__ul-li')
 // find modal window and close button
 var modal = document.querySelector(".modal");
 var closeModal = document.querySelector(".close-modal");
+var buyButton = document.getElementById('buy-btn')
 
 elemsList.forEach(el => el.addEventListener("click", function() {
 	modal.classList.add("active");
@@ -329,6 +330,13 @@ closeModal.addEventListener("click", function() {
   modal.classList.remove("active");
   document.body.style.overflow = 'scroll';
 });
+
+// close modal window on click on close button
+buyButton.addEventListener("click", function() {
+	modal.classList.remove("active");
+	document.body.style.overflow = 'scroll';
+  });
+
 
 // Закрыть модальное окно при клике вне контента
 window.addEventListener("click", function(event) {

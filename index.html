@@ -21,6 +21,9 @@
 
 	<!--==================== STYLES ====================-->
 	<link rel="stylesheet" href="assets/css/index.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
 </head>
 <body onload="getCount()">
 	<div class="wrapper">
@@ -101,6 +104,8 @@
 					<li class="important__info__li">Issue a refund if the order did not fit</li>
 				</ul>
 			</section>
+
+			
 
 			<!--==================== COUNT SNEAKERS====================-->
 			<section class="count__sneakers">
@@ -969,20 +974,6 @@
 								</a>
 							</div>
 						</div>
-						<!-- <div class="author__second">
-							<h4 class="name__author">Danil Padashylia</h4>
-							<div class="links__flex">
-								<a class="author__icon" href="https://github.com/Davidoff112" target="_blank">
-									<i class="ri-github-fill"></i>
-								</a>
-								<a class="author__icon" href="https://t.me/Ddsonq" target="_blank">
-									<i class="ri-telegram-fill"></i>
-								</a>
-								<a class="author__icon" href="https://www.instagram.com/david_voronyanskiy/" target="_blank">
-									<i class="ri-instagram-fill"></i>
-								</a>
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</section>
@@ -999,15 +990,37 @@
 				<a class="close-modal" href="#" id="close-menu" onclick="return false;">
 					<i class="modal__close__icon ri-close-fill"></i>
 				</a>
-				<div class="modal__img">
-					<img src="assets/img/nike/blazer_white_1.jpg" alt="">
+				<div class="modal__swiper">
+					<!-- <img src="assets/img/nike/blazer_white_1.jpg" alt=""> -->
+
+					<!-- Slider -->
+					<div class="swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Elements -->
+							<div class="swiper-slide">
+								<img class="first__slide-elem" src="assets/img/nike/blazer_white_1.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img class="second__slide-elem" src="assets/img/nike/blazer_white_1.jpg" alt="">
+							</div>
+						</div>
+
+						<!--  Pagination -->
+						<div class="swiper-pagination"></div>
+					
+						<!-- Navigation buttons -->
+						<div class="swiper-button-prev btn-prev"></div>
+						<div class="swiper-button-next btn-next"></div>
+					</div>
 				</div>
+
 				<h4 class="modal__title">NIKE AIRMAX WHITE</h4>
 				<p class="modal__text">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente provident, accusantium delectus ullam quis eum odio pariatur nostrum, vel nisi dolore hic sit quasi iste impedit, fugit unde est expedita?
 				</p>
 				<div class="price__container">
-					<a href="#" class="price__btn" onclick="return false;">
+					<a href="#" class="price__btn" onclick="return false;" id="buy-btn">
 						Buy
 					</a>
 					<span class="price__text">135$</span>
@@ -1025,11 +1038,15 @@
 		</footer>
 	</div>
 
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <!--=============== SCROLLREVEAL ===============-->
     <script src='assets/js/scrollreveal.js'></script>
 
 	<!--==================== JS ====================-->
 	<script src="assets/js/app.js"></script>
 	<script src="assets/js/app2.js"></script>
+
+	<script src="assets/js/swiper.js"></script>
 </body>
 </html>
