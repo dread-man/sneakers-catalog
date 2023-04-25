@@ -67,7 +67,6 @@ if(closeMenu) {
 	})
 }
 
-
 // media queriy for deleting mobile menu
 const mediaQuery1 = window.matchMedia('(max-width: 1024px)');
 
@@ -119,7 +118,6 @@ linksModelsList.forEach(el => el.addEventListener('click', () => {
 }))
 
 
-
 if(nike1) {
 	nike1.addEventListener('click', () => {
 		// for disaablead active class
@@ -152,7 +150,6 @@ if(nike1) {
 		getCount()
 	})
 }
-
 
 
 if(adidas1) {
@@ -311,8 +308,6 @@ if(nb2) {
 	})
 }
 
-
-
 const elemsList = document.querySelectorAll('.all__sheakers__ul-li')
 
 // find modal window and close button
@@ -326,7 +321,6 @@ let priceText = document.getElementById('price-text')
 let modalImage1 = document.getElementById('modal-image1')
 let modalImage2 = document.getElementById('modal-image2')
 
-
 elemsList.forEach(el => el.addEventListener("click", function() {
 	modal.classList.add("active");
 	document.body.style.overflow = 'hidden';
@@ -339,6 +333,7 @@ elemsList.forEach(el => el.addEventListener("click", function() {
 	const startIndex = imagePath.indexOf('assets');
 	const relativePath = imagePath.substring(startIndex);
 	modalImage1.src = relativePath
+	selectedModel.value = nameOfModel
 
 	// for adding second image of snikers
 	let str = relativePath
@@ -353,17 +348,11 @@ elemsList.forEach(el => el.addEventListener("click", function() {
 // close modal window on click on close button
 closeModal.addEventListener("click", function() {
   modal.classList.remove("active");
+  form.classList.remove('active')
   document.body.style.overflow = 'scroll';
 });
 
-// close modal window on click on close button
-buyButton.addEventListener("click", function() {
-	modal.classList.remove("active");
-	document.body.style.overflow = 'scroll';
-  });
-
-
-// Закрыть модальное окно при клике вне контента
+// Close modal window on click outside of content
 window.addEventListener("click", function(event) {
   if (event.target == modal) {
     modal.classList.remove("active");
@@ -371,10 +360,57 @@ window.addEventListener("click", function(event) {
   }
 });
 
-// Адаптивный дизайн модального окна
+// Responsive modal window design
 window.addEventListener("resize", function() {
-  var maxWidth = 600; // Максимальная ширина модального окна
-  var width = Math.min(maxWidth, window.innerWidth * 0.8); // Ширина контента модального окна
+  var maxWidth = 600; // Max width of modal window
+  var width = Math.min(maxWidth, window.innerWidth * 0.8); // Width of content of modal window  
   modal.querySelector(".modal-content").style.width = width + "px";
 });
+
+// Registration form 
+const form = document.getElementById('modal-form') 
+const formCloseBtn = document.getElementById('close-menu2')
+const sendButton = document.getElementById('send-btn')
+const selectedModel = document.getElementById('input-model')
+
+// open modal form on click buy button
+buyButton.addEventListener("click", function() { 
+
+	modal.classList.remove("active");
+	form.classList.add('active')
+});
+
+// close modal window on click on close button
+formCloseBtn.addEventListener('click', () => {
+	form.classList.remove('active')
+	document.body.style.overflow = 'scroll'
+})
+
+// event listener for send button
+sendButton.addEventListener('click', () => {
+	form.classList.remove('active')
+	document.body.style.overflow = 'scroll'
+})
+
+// FOR SENDING EMAIL FORM
+const contactForm = document.getElementById('modal-form'),
+	  contactMessage = document.getElementById('contact-message'),
+	  contactUser = document.getElementById('input-email')
+
+const sendEmail = (e) => {
+	e.preventDefault()
+
+	if(contactUser.value === '') {
+		console.log('Contact user is empty')
+	} else {
+	emailjs.sendForm('service_qyjy7ue','template_sc8dbed', e.target ,'rNkA9Bh_NC226Unyg')
+	.then(() => {
+		console.log('Email have been send') 	
+	})
+	console.log('hehe')
+	}
+}
+contactForm.addEventListener('submit', sendEmail)
+
+
 

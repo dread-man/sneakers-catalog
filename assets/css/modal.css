@@ -9,6 +9,16 @@
 	overflow: auto;
 	background-color: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(10px);
+	animation: ani 0.5s;
+}
+
+@keyframes ani {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .modal.active {

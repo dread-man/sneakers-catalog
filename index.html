@@ -18,12 +18,15 @@
 
 	<!--==================== TITLE ====================-->
 	<title>SSneakers - amazing shoes</title>
-
+		
 	<!--==================== STYLES ====================-->
 	<link rel="stylesheet" href="assets/css/index.css">
 
+	<!--==================== STYLES FOR SWIPER ====================-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
+	<!--=============== EMAIL JS ===============-->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body onload="getCount()">
 	<div class="wrapper">
@@ -1166,6 +1169,73 @@
 			</div>
 		</div>
 
+		<!--==================== MODAL FOR FORM ====================-->
+		<div class="modal" id="modal-form">
+			<div class="modal-content">
+				<a class="close-modal" href="#" id="close-menu2" onclick="return false;">
+					<i class="modal__close__icon ri-close-fill"></i>
+				</a>
+				<h4 id="modal-title" class="modal__title">Checkout</h4>
+				<p class="modal__text form__text">
+					For checkout to place an order, enter the correct data for order
+				</p>
+
+				<form action="" id="modal-form">
+					<div class="form__group">
+						<input class="form__input" name="user_model" type="text" id="input-model" placeholder=" ">
+						<label class="form__label" for="input-model">Selected model</label>
+					</div>
+
+					<div class="form__group">
+						<label for="input-size">Choose feet size:</label>
+						<select name="user_size" id="input-size">
+							<option value="35">35</option>
+							<option value="36">36</option>
+							<option value="37">37</option>
+							<option value="38">38</option>
+							<option value="39">39</option>
+							<option value="40">40</option>
+							<option value="41">41</option>
+							<option value="42">42</option>
+							<option value="43">43</option>
+							<option value="44">44</option>
+							<option value="45">45</option>
+							<option value="46">46</option>
+							<option value="47">47</option>
+						</select>
+					</div>
+
+					<div class="form__group">
+						<input class="form__input" name="from_name" type="text" id="input-name" placeholder=" ">
+						<label class="form__label" for="input-name">Name</label>
+					</div>
+					
+					<div class="form__group">
+						<input class="form__input" name="from_surname" type="text" id="input-surename" placeholder=" ">
+						<label class="form__label" for="input-surename">Sure name</label>
+					</div>
+
+					<div class="form__group">
+						<input class="form__input"name="user_email" type="email" id="input-email" placeholder=" " >
+						<label class="form__label" for="input-email">Email</label>
+					</div>
+
+					<div class="form__group">
+						<input class="form__input" name="user_phone" type="text" id="input-number" placeholder=" ">
+						<label class="form__label" for="input-number">Phone number</label>
+					</div>
+
+					<div class="form__group">
+						<input name="user_call" type="checkbox" id="input-call" placeholder=" ">
+						<label for="input-call">Not call me</label>
+					</div>
+
+					<button type="submit" value="Send" class="price__btn form__btn" id="send-btn">Send!</button>
+				</form>
+				<p class="contact__message" id="contact-message"></p>
+			</div>
+		</div>
+
 		<!--==================== FOOTER ====================-->
 		<footer class="footer" id="footer">
 			<div class="container">
@@ -1176,11 +1246,11 @@
 		</footer>
 	</div>
 
-	<!--=============== SWIPER ===============-->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
     <!--=============== SCROLLREVEAL ===============-->
     <script src='assets/js/scrollreveal.js'></script>
+
+	<!--=============== SWIPER ===============-->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 	<!--==================== JS ====================-->
 	<script src="assets/js/app1.js"></script>
