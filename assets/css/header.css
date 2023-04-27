@@ -45,7 +45,7 @@
 }
 
 .theme__button {
-	color: var(--black-color);
+	/* color: var(--black-color); */
 	padding: 4px;
 	border-radius: 50%;
 	transition: 0.3s;
@@ -100,10 +100,9 @@
 	font-size: 23px;
 }
 
-/*  
-.header__list-item:last-child a {
-	color: var(--black-color-lighter);
-} */
+.ri-sun-line::before {
+	color: var(--black-color);
+}
 
 @media screen and (max-width: 1024px) {
 	.header__flex-items .header__list-companies a:hover {

@@ -5,11 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
 	var body = document.querySelector("body");
 	body.style.opacity = 1;
 	body.style.transition = "opacity 0.5s ease-in-out";
-  });
+});
 
 // all variables
 const header = document.getElementById('header')
-const themeButton = document.getElementById('theme-button')
 const menuButton = document.getElementById('burger-menu')
 const mobileMenu = document.getElementById('mobile-menu')
 const closeMenu = document.getElementById('mobile-close-menu')
@@ -117,7 +116,6 @@ linksModelsList.forEach(el => el.addEventListener('click', () => {
 	getCount()
 }))
 
-
 if(nike1) {
 	nike1.addEventListener('click', () => {
 		// for disaablead active class
@@ -126,7 +124,6 @@ if(nike1) {
 				el.classList.remove('modeles__ul__li__a-active')
 			}
 		})
-
 
 		// for hiding another models
 		for(let i = 0; i < elList.length; i++) {
@@ -150,7 +147,6 @@ if(nike1) {
 		getCount()
 	})
 }
-
 
 if(adidas1) {
 	adidas1.addEventListener('click', () => {
@@ -213,7 +209,6 @@ if(nb1) {
 		getCount()
 	})
 }
-
 
 if(nike2) {
 	nike2.addEventListener('click', () => {
@@ -390,6 +385,8 @@ formCloseBtn.addEventListener('click', () => {
 sendButton.addEventListener('click', () => {
 	form.classList.remove('active')
 	document.body.style.overflow = 'scroll'
+	const inputs = form.querySelectorAll('input');
+	inputs.forEach(input => input.value = '');
 })
 
 // FOR SENDING EMAIL FORM

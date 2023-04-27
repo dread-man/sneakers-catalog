@@ -15,6 +15,7 @@
 .form__text {
 	font-size: 20px;
 	margin-bottom: 10px;
+	color: var(--black-color);
 }
 
 .form__label {
@@ -24,6 +25,7 @@
 	position: absolute;
 	color: #9e9e9e;
 	transition: 0.3s;
+
 }
 
 .form__input {
@@ -35,6 +37,7 @@
 	outline: none;
 	transition: 0.3s;
 	font-size: 17px;
+	color: var(--black-color);
 }
 
 .form__label:hover {

@@ -60,9 +60,10 @@ img {
 }
 
 body.dark-theme {
-	--body-background-color: #ffffff;
+	--body-background-color: #111;
 	--white-color: #1E1E1E;
 	--white-color-darker: #535353;
+	--black-color: #f0f0f0
 }
 
 .wrapper {

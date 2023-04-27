@@ -1,9 +1,76 @@
 'use strict'
 
+// changing theme 
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconSneaker = document.getElementById('header-icon-sneaker')
+
+// определяем пути к картинкам для разных тем
+let whiteSneakerPath = '../assets/icons/sneakers_white.png';
+let blackSneakerPath = '../assets/icons/sneakers_black.png';
+
+// определяем имя ключа для сохранения текущей картинки в локальном хранилище
+let sneakerImagePathKey = 'sneakerImagePath';
+
+let themeIcon = document.getElementById('theme-icon')
+let sunIcon = 'ri-sun-line';
+let moonIcon = 'ri-moon-line';
+let currentIcon = localStorage.getItem('themeIcon') || sunIcon;
+
+themeIcon.classList.add(currentIcon);
+
+if(themeButton) {
+	themeButton.addEventListener('click', () => {
+
+		document.body.classList.toggle(darkTheme)
+		// сохраняем текущую тему в локальном хранилище браузера
+		let isDarkTheme = document.body.classList.contains(darkTheme);
+		localStorage.setItem('isDarkTheme', isDarkTheme);
+
+		// проверяем текущий путь к картинке и меняем его на противоположный
+		if (iconSneaker.src.endsWith('black.png')) {
+		iconSneaker.src = whiteSneakerPath;
+		} else {
+		iconSneaker.src = blackSneakerPath;
+		}
+		// сохраняем путь к текущей картинке в локальном хранилище браузера
+		localStorage.setItem(sneakerImagePathKey, iconSneaker.src);
+
+		if (currentIcon === sunIcon) {
+			currentIcon = moonIcon;
+		  } else {
+			currentIcon = sunIcon;
+		  }
+		  themeIcon.classList.toggle(sunIcon);
+		  themeIcon.classList.toggle(moonIcon);
+		
+		  // Сохраняем текущий класс иконки в локальное хранилище
+		  localStorage.setItem('themeIcon', currentIcon);
+	})
+}
+
+// проверяем, есть ли сохраненный путь к картинке в локальном хранилище браузера
+let savedSneakerImagePath = localStorage.getItem(sneakerImagePathKey);
+
+// устанавливаем текущую картинку, используя сохраненный путь, если он есть
+if (savedSneakerImagePath) {
+  iconSneaker.src = savedSneakerImagePath;
+}
+
+// проверяем, есть ли сохраненная тема в локальном хранилище браузера
+let savedIsDarkTheme = localStorage.getItem('isDarkTheme');
+
+// устанавливаем соответствующий класс темы на элементе body
+if (savedIsDarkTheme === 'true') {
+  document.body.classList.add(darkTheme);
+} else {
+  document.body.classList.remove(darkTheme);
+}
+
 window.addEventListener('load', function() {
 
-    var previousElement = null;
-    var currentElement = document.getElementsByClassName('important__info__li')[0];
+    let previousElement = null;
+    let currentElement = document.getElementsByClassName('important__info__li')[0];
     currentElement.classList.add('showing');
     
     setInterval(function() {
